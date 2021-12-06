@@ -27,4 +27,23 @@ public class HelloController {
     public String helloString(@RequestParam("name") String name) {
         return "hello " + name;
     }
+
+    @GetMapping("hello-api")
+    @ResponseBody
+    public Hello helloApi(@RequestParam("name") String name) {
+        Hello hello = new Hello();
+        hello.setName(name);
+        return hello; //객체를 넘김
+    }
+    static class Hello { //HelloController.Hello -> 쓸 수 있음 (class를 더 만들 수 있다는 말)
+        private String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
 }
