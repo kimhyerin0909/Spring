@@ -8,7 +8,7 @@ public class MyLinkedListTest {
         list.addElement("B");
         list.addElement("C");
         list.addElement("D");
-        list.addElement("E");
+        list.addElement("E"); //ㄴ
 
         list.insertElement("F", 2);
         list.insertElement("Z", 0);

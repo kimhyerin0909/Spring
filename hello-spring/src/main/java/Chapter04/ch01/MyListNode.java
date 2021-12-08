@@ -2,7 +2,7 @@ package Chapter04.ch01;
 
 public class MyListNode {
     private String data;
-    public MyListNode link; //값을 가지지 않고 참조만 할 수 있음
+    public MyListNode link; //값을 가지지 않고 참조만 할 수 있음ㄴ
 
     public MyListNode() {
         this.data = null;

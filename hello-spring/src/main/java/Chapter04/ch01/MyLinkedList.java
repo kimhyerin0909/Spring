@@ -26,7 +26,7 @@ public class MyLinkedList {
         count++;
     }
 
-    //중간에 삽입
+    //중간에 삽입ㄴ
     public void insertElement(String data, int position) {
         MyListNode newNode = new MyListNode(data);
         if(position < 0 || position > count) {
