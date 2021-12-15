@@ -8,11 +8,15 @@ public class MyLinkedListTest {
         list.addElement("B");
         list.addElement("C");
         list.addElement("D");
-        list.addElement("E"); //ㄴ
+        list.addElement("E");
 
         list.insertElement("F", 2);
         list.insertElement("Z", 0);
 
         list.printAll();
+
+        System.out.println(list.removeElement(2));
+        list.printAll();
+
     }
 }
